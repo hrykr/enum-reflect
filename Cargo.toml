@@ -1,0 +1,20 @@
+[package]
+name = "enum_reflect"
+version = "0.1.0"
+edition = "2024"
+authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
+description = "Enum fields reflection library"
+license = "MIT"
+repository = ""
+homepage = ""
+readme = "README.md"
+keywords = ["enum", "reflect", "reflection", "rust", "field"]
+categories = [""]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+proc-macro2 = "1.0"
