@@ -6,10 +6,10 @@ authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
 description = "Enum fields reflection library"
 license = "MIT"
 repository = "https://github.com/hrykr/enum-reflect/"
-homepage = ""
+homepage = "https://github.com/hrykr/enum-reflect/"
 readme = "README.md"
-keywords = ["enum", "reflect", "reflection", "rust", "field"]
-categories = [""]
+keywords = ["enum", "reflect", "reflection", "rust", "field", "derive"]
+categories = ["development-tools::procedural-macro-helpers", "rust-patterns"]
 
 [lib]
 proc-macro = true
