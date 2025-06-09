@@ -1,6 +1,9 @@
 # Enum Reflection Rust
 
-[<img alt="github" src="https://img.shields.io/badge/GITHUB-hrykr%2Fenum__reflect-blue?logo=github&label=GITHUB&link=https%3A%2F%2Fgithub.com%2Fhrykr%2Fenum-reflect" height="20">](https://github.com/hrykr/enum-reflect)
+[<img alt="github" src="https://img.shields.io/badge/github-hrykr%2Fenum__reflect-blue?logo=github&label=github&link=https%3A%2F%2Fgithub.com%2Fhrykr%2Fenum-reflect" height="20">](https://github.com/hrykr/enum-reflect)
+[<img alt="crates.io" src="https://img.shields.io/crates/v/enum_reflect?logo=rust" height="20">](https://crates.io/crates/enum_reflect)
+[<img alt="crates.io" src="https://img.shields.io/docsrs/enum_reflect?logo=docs.rs&label=docs.rs" height="20">](https://docs.rs/enum_reflect/latest/enum_reflect/)
+
 
 Rust library for enum reflection. Use it to get all fields in enum.
 
