@@ -219,7 +219,7 @@ pub fn enum_reflection(input: TokenStream) -> TokenStream {
     });
 
     let expanded = quote! {
-        impl enum_reflect_extetn::EnumReflect for #name {
+        impl enum_reflect_extern::EnumReflect for #name {
             pub fn get_fields(&self) -> Vec<&dyn std::any::Any> {
                 match self {
                     #(#get_fields_arms)*
