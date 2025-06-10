@@ -1,6 +1,6 @@
 [package]
 name = "enum_reflect"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
 description = "Enum fields reflection library"
@@ -18,3 +18,4 @@ proc-macro = true
 syn = "2.0"
 quote = "1.0"
 proc-macro2 = "1.0"
+enum_reflect_extern = "0.1"
