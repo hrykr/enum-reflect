@@ -1,6 +1,6 @@
 [package]
 name = "enum_reflect"
-version = "0.2.2"
+version = "0.2.3"
 edition = "2024"
 authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
 description = "Enum fields reflection library"
