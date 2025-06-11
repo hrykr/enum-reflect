@@ -220,25 +220,25 @@ pub fn enum_reflection(input: TokenStream) -> TokenStream {
 
     let expanded = quote! {
         impl enum_reflect_extern::EnumReflection for #name {
-            pub fn get_fields(&self) -> Vec<&dyn std::any::Any> {
+            fn get_fields(&self) -> Vec<&dyn std::any::Any> {
                 match self {
                     #(#get_fields_arms)*
                 }
             }
 
-            pub fn get_named_fields(&self) -> Vec<(&'static str, &dyn std::any::Any)> {
+            fn get_named_fields(&self) -> Vec<(&'static str, &dyn std::any::Any)> {
                 match self {
                     #(#get_named_fields_arms)*
                 }
             }
 
-            pub fn get_fields_mut(&mut self) -> Vec<&mut dyn std::any::Any> {
+            fn get_fields_mut(&mut self) -> Vec<&mut dyn std::any::Any> {
                 match self {
                     #(#get_fields_mut_arms),*
                 }
             }
 
-            pub fn get_named_fields_mut(&mut self) -> Vec<(&'static str, &mut dyn std::any::Any)> {
+            fn get_named_fields_mut(&mut self) -> Vec<(&'static str, &mut dyn std::any::Any)> {
                 match self {
                     #(#get_named_fields_mut_arms),*
                 }

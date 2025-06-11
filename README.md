@@ -15,7 +15,7 @@ Rust library for enum reflection. Use it to get all fields in enum.
 > or
 ```toml
 [dependencies]
-enum_reflect = "0.2.3"
+enum_reflect = "0.2.4"
 ```
 
 ## Dependencies
