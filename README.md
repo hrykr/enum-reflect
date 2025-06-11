@@ -4,6 +4,8 @@
 [<img alt="crates.io" src="https://img.shields.io/crates/v/enum_reflect?logo=rust" height="20">](https://crates.io/crates/enum_reflect)
 [<img alt="crates.io" src="https://img.shields.io/docsrs/enum_reflect?logo=docs.rs&label=docs.rs" height="20">](https://docs.rs/enum_reflect/latest/enum_reflect/)
 
+## <span style="color: red;">LIBRARY IS IN BETA! SOME FEATURES CAN WORK WRONG!</span>
+<span style="color: red;">If you have any error, write about it [here](https://github.com/hrykr/enum-reflect/issues)</span>
 
 Rust library for enum reflection. Use it to get all fields in enum.
 
@@ -13,7 +15,7 @@ Rust library for enum reflection. Use it to get all fields in enum.
 > or
 ```toml
 [dependencies]
-enum_reflect = "0.2.1"
+enum_reflect = "0.2.2"
 ```
 
 ## Dependencies

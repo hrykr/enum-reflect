@@ -1,6 +1,7 @@
 use proc_macro::TokenStream;
 use quote::quote;
 use syn::{parse_macro_input, DeriveInput, Data, Fields, Ident};
+use enum_reflect_extern::EnumReflection;
 
 /// Derive reflection for enum fields to access name and value.
 /// Use mut functions to get mutable fields.
@@ -219,7 +220,7 @@ pub fn enum_reflection(input: TokenStream) -> TokenStream {
     });
 
     let expanded = quote! {
-        impl enum_reflect_extern::EnumReflect for #name {
+        impl EnumReflection for #name {
             pub fn get_fields(&self) -> Vec<&dyn std::any::Any> {
                 match self {
                     #(#get_fields_arms)*

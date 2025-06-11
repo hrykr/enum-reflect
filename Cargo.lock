@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "enum_reflect"
-version = "0.2.1"
+version = "0.2.2"
 dependencies = [
  "enum_reflect_extern",
  "proc-macro2",
@@ -14,9 +14,9 @@ dependencies = [
 
 [[package]]
 name = "enum_reflect_extern"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eaeff44bc96e6361b9cb81ee2efd805c7c504bd22e69f1bcd28d1d1472523ad6"
+checksum = "6e7a2a0c7df669bd16bafadb6be8431e9e94cd1791be2b8bdca3fcdc2e8b77da"
 
 [[package]]
 name = "proc-macro2"
