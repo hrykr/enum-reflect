@@ -1,0 +1,14 @@
+[package]
+name = "enum_reflect_extern"
+version.workspace = true
+edition.workspace = true
+authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
+description = "Traits for enum_reflect"
+license.workspace = true
+repository = "https://github.com/hrykr/enum-reflect/"
+homepage = "https://github.com/hrykr/enum-reflect/"
+readme = "../../README.md"
+keywords = ["enum", "reflect", "rust", "field", "derive"]
+categories = ["rust-patterns"]
+
+[dependencies]
