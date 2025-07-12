@@ -248,3 +248,16 @@ pub fn enum_reflection(input: TokenStream) -> TokenStream {
 
     expanded.into()
 }
+
+#[proc_macro_derive(InspectableEnum)]
+pub fn derive_inspectable_enum(input: TokenStream) -> TokenStream {
+    let input = parse_macro_input!(input as DeriveInput);
+    let name = &input.ident;
+
+    // Register this enum name for downcast
+    let expanded = quote! {
+        impl enum_reflect_extern::InspectableEnum for #name {}
+    };
+
+    TokenStream::from(expanded)
+}
