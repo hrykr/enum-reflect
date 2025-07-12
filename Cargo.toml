@@ -3,6 +3,7 @@ members = [
     "crates/enum_reflect",
     "crates/enum_reflect_extern"
 ]
+resolver = "3"
 
 [workspace.package]
 edition = "2024"
