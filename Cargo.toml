@@ -1,21 +1,18 @@
-[package]
-name = "enum_reflect"
-version = "0.2.5"
+[workspace]
+members = [
+    "crates/enum_reflect",
+    "crates/enum_reflect_extern"
+]
+
+[workspace.package]
 edition = "2024"
-authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
-description = "Enum fields reflection library"
 license = "MIT"
-repository = "https://github.com/hrykr/enum-reflect/"
-homepage = "https://github.com/hrykr/enum-reflect/"
-readme = "README.md"
-keywords = ["enum", "reflect", "rust", "field", "derive"]
-categories = ["development-tools::procedural-macro-helpers", "rust-patterns"]
+version = "0.2.6"
 
-[lib]
-proc-macro = true
+[workspace.dependencies]
+enum_reflect = { version = "0.2.5", path = "crates/enum_reflect" }
+enum_reflect_extern = { version = "0.2.1", path = "crates/enum_reflect_extern" }
 
-[dependencies]
 syn = "2.0"
 quote = "1.0"
 proc-macro2 = "1.0"
-enum_reflect_extern = "0.2.1"

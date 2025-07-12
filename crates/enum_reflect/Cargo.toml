@@ -1,0 +1,21 @@
+[package]
+name = "enum_reflect"
+version.workspace = true
+edition.workspace = true
+authors = ["Hryhorii Kravtsov kravtsov.hryhorii@gmail.com"]
+description = "Enums reflection library"
+license.workspace = true
+repository = "https://github.com/hrykr/enum-reflect/"
+homepage = "https://github.com/hrykr/enum-reflect/"
+readme = "../../README.md"
+keywords = ["enum", "reflect", "rust", "field", "derive"]
+categories = ["development-tools::procedural-macro-helpers", "rust-patterns"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0.104"
+quote = "1.0"
+proc-macro2 = "1.0"
+enum_reflect_extern = { path = "../enum_reflect_extern" }

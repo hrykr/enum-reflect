@@ -18,11 +18,6 @@ Rust library for enum reflection. Use it to get all fields in enum.
 enum_reflect = "0.2.5"
 ```
 
-## Dependencies
-
-> ### [Enum Reflect Extern](https://crates.io/crates/enum_reflect_extern)
-> Extern traits, structs and other for enum_reflect.
-
 ## Example
 
 ```rust
